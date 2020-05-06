@@ -61,6 +61,7 @@ public class PersonaDaoJDBC implements PersonaDao{
         return personas;
     }
 
+    @Override
     public int insert(PersonaDTO persona) throws SQLException {
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -86,6 +87,7 @@ public class PersonaDaoJDBC implements PersonaDao{
         return rows;
     }
 
+    @Override
     public int update(PersonaDTO persona) throws SQLException {
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -114,6 +116,7 @@ public class PersonaDaoJDBC implements PersonaDao{
         return rows;
     }
 
+    @Override
     public int delete(PersonaDTO persona) throws SQLException {
         Connection conn = null;
         PreparedStatement stmt = null;

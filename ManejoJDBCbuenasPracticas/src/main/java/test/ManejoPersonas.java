@@ -26,6 +26,18 @@ public class ManejoPersonas {
                 System.out.println("Persona DTO:" + persona);
             }
             
+            
+            PersonaDTO cambioPersona = new PersonaDTO();
+            cambioPersona.setId_persona(2);
+            cambioPersona.setNombre("Juancho");
+            cambioPersona.setApellido("Montenegro");
+            cambioPersona.setEmail("juanchin@gmail.com");
+            cambioPersona.setTelefono("3008980651");
+            // 1. Update
+            personaDao.update(cambioPersona);
+            
+            
+            
             conexion.commit();
             System.out.println("Se ha hecho commit de la transaccion");
         } catch (SQLException ex) {
