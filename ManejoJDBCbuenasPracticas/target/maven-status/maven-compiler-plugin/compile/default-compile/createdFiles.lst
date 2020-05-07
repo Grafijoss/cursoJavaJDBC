@@ -1,8 +1,9 @@
 domain\PersonaDTO.class
-datos\UsuarioJDBC.class
 test\ManejoPersonas.class
-domain\Usuario.class
+datos\UsuarioDaoJDBC.class
 datos\Conexion.class
 datos\PersonaDao.class
+datos\UsuarioDao.class
 datos\PersonaDaoJDBC.class
 test\ManejoUsuarios.class
+domain\UsuarioDTO.class
